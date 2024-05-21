@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+<script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
     <title>contact</title>
+    <style>
+        .borderhalf {
+            border:none;
+            height:1px;
+            background-image:
+             linear-gradient(
+                to right,
+                transparent,
+                #232323 30%,
+                transparent
+             )
+        }
+    </style>
 </head>
 <body>  
     <h1>contact</h1>  
-    
+    <img src="https://via.placeholder.com/300x200" alt="">
+    <img src="https://via.placeholder.com/300x200/0cf/fff/?text=textsample" alt="">
+    <hr class="borderhalf">
+    <div class="js-scrollable">
+        <table>
+            <thead>
+                <tr>
+                    <th>title1</th>
+                    <th>title2</th>
+                    <th>title3i</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eaque recusandae corrupti, ex modi ceat recusandae minus, aut est assumenda.</td>
+                    <td>id reprehenderit dolores molestium perferendis enim, minus cumque itaque aliquam.
+                    </td>
+                    <td>as voluptates dolor officia ipsam. Quisquam accusanti
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+   
+    </div>
+    <script>
+        new ScrollHint('.js-scrollable', {
+            scrollHintIconAppendClass: 'scroll-hint-icon-white',
+            applyToParents: true,
+            i18n: {
+                scrollable: 'スクロールできます'
+            }
+    });
+    </script>
+    <!-- <script>
+        new ScrollHint('.js-scrollable');
+    </script> -->
 </body>
 </html>
