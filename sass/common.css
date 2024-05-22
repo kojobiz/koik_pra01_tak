@@ -13,6 +13,12 @@ a {
   text-decoration: none;
 }
 
-.color-primary {
-  fill: #3498db;
+.color-iconblue {
+  fill: #2c73c6;
+  stroke-width: 0;
+}
+
+.color-iconorange {
+  fill: #ff9d06;
+  stroke-width: 0;
 }/*# sourceMappingURL=common.css.map */
