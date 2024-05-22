@@ -67,3 +67,20 @@ $color-iconorange: #ff9d06;
     display:flex;
     line-height: 1;
 }
+.l-header__navi--wrapper {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.l-header .navi-01 {
+    margin-right: 2rem;
+    gap: 1.4rem;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.l-header__menu {
+    display: flex;
+    gap: 0 1.8rem;
+    align-items: center;
+    list
+}
