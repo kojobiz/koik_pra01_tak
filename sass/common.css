@@ -1,3 +1,12 @@
+:root {
+  --base-font-color: #333;
+  --bg-color: #e2e2e2;
+  --main-width:120.0rem;
+  --primary-color:#409ed;
+  --margin-size:1.6rem;
+  --padding-size:1.6rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +14,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden !important;
+  background-color: #fff;
+  color: var(--base-font-color, #000);
+  word-break: break-all;
+  letter-spacing: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
 }
 
 a {
@@ -20,5 +39,9 @@ a {
 
 .color-iconorange {
   fill: #ff9d06;
+  stroke-width: 0;
+}
+
+.stroke-zero {
   stroke-width: 0;
 }/*# sourceMappingURL=common.css.map */

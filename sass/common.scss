@@ -1,3 +1,5 @@
+@use './variable.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +8,18 @@
   
   // ベーススタイル
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden !important;
+    background-color: #fff;
+    color: var(--base-font-color, #000);
+    word-break: break-all;
+    letter-spacing: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
   }
   
   a {
@@ -26,5 +38,8 @@ $color-iconorange: #ff9d06;
 // svgでfillで使用したいときは変数にクラスを再設定する必要あり
 .color-iconorange {
     fill:$color-iconorange;
+    stroke-width: 0;
+}
+.stroke-zero {
     stroke-width: 0;
 }

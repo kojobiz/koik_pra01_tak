@@ -52,74 +52,81 @@
 
 <body class="home" class="bg-pink-300 w-[100%] h-[auto]">
     <header id="header" class="l-header bg-green-300 w-[100%] h-[auto]">
-        <!--------------------------------
-        /////////////////// header　ロゴ
-        ---------------------------------->
-        <h1 class="l-header__innner bg-blue-300 w-[100%] h-[auto]" >
-            <!-- data-linkは分析に使用 -->
-            <a href="./" data-link="banner">
-                <img src="./images/logo.png" alt="" width="278" height="57" alt="ロゴ：動物が泳いでいるイメージとスクール名のテキスト">
-            </a>
-        </h1>
-        <!--------------------------------
-        /////////////////// header　真ん中と右
-        ---------------------------------->
-        <div id="spNaviMenu" class="l-header__navi--wrapper">
-            <!-- ナビ01 テキストと電話------------------------>
-            <nav class="l-header__navi navi-01">
-                nav01
-                <ul class="l-header__menu menu-01">
-                    <li>menu-01</li>
-                </ul>
-                <ul class="l-header__menu menu-02">
-                    <li>menu-02</li>
-                </ul>
-            </nav>
-            <!-- ナビ02　右2つ------------------------>
-            <nav class="l-header__navi navi-02">
-                nav02
-                <a href="./contact.html" class="l-header__contact" data-link="banner">
-                    <!-- svg設定の場合 -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="26" class="icon" aria-hidden="true" focusable="false" data-prefix="fas" >
-                        <path fill="#fff" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
-                    </svg>
-                    お問い合わせ
+        <!-- header=pc+sp -->
+        <div class="l-header__inner">
+            <!--------------------------------
+            /////////////////// header　ロゴ
+            ---------------------------------->
+            <h1 class="l-header__title bg-blue-300 w-[100%] h-[auto]" >
+                <!-- data-linkは分析に使用 -->
+                <a href="./" data-link="banner">
+                    <img src="./images/logo.png" alt="" width="278" height="57" alt="ロゴ：動物が泳いでいるイメージとスクール名のテキスト">
                 </a>
-                <a href="./members.html" class="l-header__member" data-link="banner">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="26" class="icon" aria-hidden="true" focusable="false" data-prefix="fas">
-                        <path fill=#fff d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z">
+            </h1>
+            <!--------------------------------
+            /////////////////// header　真ん中と右
+            ---------------------------------->
+            <div id="spNaviMenu" class="l-header__navi--wrapper">
+                <!-- ナビ01 テキストと電話------------------------>
+                <nav class="l-header__navi navi-01">
+                    nav01
+                    <ul class="l-header__menu menu-01">
+                        <li>menu-01</li>
+                    </ul>
+                    <ul class="l-header__menu menu-02">
+                        <li>menu-02</li>
+                    </ul>
+                </nav>
+                <!-- ナビ02　右2つ------------------------>
+                <nav class="l-header__navi navi-02">
+                    nav02
+                    <a href="./contact.html" class="l-header__contact" data-link="banner">
+                        <!-- svg設定の場合 -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="26" class="icon" aria-hidden="true" focusable="false" data-prefix="fas" >
+                            <path fill="#fff" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                        </svg>
+                        お問い合わせ
+                    </a>
+                    <a href="./members.html" class="l-header__member" data-link="banner">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="26" class="icon" aria-hidden="true" focusable="false" data-prefix="fas">
+                            <path fill=#fff d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z">
+                        </svg>
+                        会員様ページ                   
+                    </a>
+                </nav>
+            </div>
+            <!--------------------------------
+            /////////////////// header　サイドナビ
+            ---------------------------------->
+            <!-- ナビ03　------------------------>
+            <nav class="l-header__navi navi-03">
+                <a href="./experience-guide.html" class="l-header__fixed trial" data-link="banner">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="26" height="26" class="icon color-iconblue" aria-hidden="true" focusable="false" data-prefix="fas">
+                        <path d="M309.5 178.4L447.9 297.1c-1.6 .9-3.2 2-4.8 3c-18 12.4-40.1 20.3-59.2 20.3c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-10.1 0-21.1-2.2-31.9-6.2C163.1 193.2 262.2 96 384 96h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384c-26.9 0-52.3 6.6-74.5 18.4zM160 160A64 64 0 1 1 32 160a64 64 0 1 1 128 0zM306.5 325.9C329 341.4 356.5 352 384 352c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 405.7 417 416 384 416c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 341.2 165.1 352 192 352c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/>
                     </svg>
-                    会員様ページ                   
+                    <span>体験案内</span>
+                </a>
+                <a href=".membership-guide.html" class="l-header__fixed join" data-link="banner">
+                    <!-- pathのfillにカラー指定をせず、svgにsassコンパイルのcolor-primaryを指定する方法 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="26" height="26" class="icon color-iconorange" aria-hidden="true" focusable="false" data-prefix="fas">
+                        <path d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z">
+                    </svg>
+                    <span>入会案内</span>
                 </a>
             </nav>
         </div>
-        <!--------------------------------
-        /////////////////// header　サイドナビ
-        ---------------------------------->
-        <!-- ナビ03　------------------------>
-        <nav class="l-header__navi navi-03">
-            <a href="./experience-guide.html" class="l-header__fixed trial" data-link="banner">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="26" height="26" class="icon color-iconblue" aria-hidden="true" focusable="false" data-prefix="fas">
-                    <path d="M309.5 178.4L447.9 297.1c-1.6 .9-3.2 2-4.8 3c-18 12.4-40.1 20.3-59.2 20.3c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-10.1 0-21.1-2.2-31.9-6.2C163.1 193.2 262.2 96 384 96h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384c-26.9 0-52.3 6.6-74.5 18.4zM160 160A64 64 0 1 1 32 160a64 64 0 1 1 128 0zM306.5 325.9C329 341.4 356.5 352 384 352c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 405.7 417 416 384 416c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 341.2 165.1 352 192 352c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/>
-                </svg>
-                <span>体験案内</span>
-            </a>
-            <a href=".membership-guide.html" class="l-header__fixed join" data-link="banner">
-                <!-- pathのfillにカラー指定をせず、svgにsassコンパイルのcolor-primaryを指定する方法 -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="26" height="26" class="icon color-iconorange" aria-hidden="true" focusable="false" data-prefix="fas">
-                    <path d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z">
-                </svg>
-                <span>入会案内</span>
-            </a>
-            
-
-
-
-
-        </nav>
-        
-
-
+        <!-- spハンバーガー -->
+        <button type="button" id="hamburgerMenu" class="l-header__hamburger tabOnly" aria-label="メニュー">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" class="icon" aria-hidden="true" focusable="false" >
+                <path fill="#fff" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+            <!-- <span class="inner">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span> -->
+            <p class="label">MENU</p>
+        </button>
     </header>
     
     
