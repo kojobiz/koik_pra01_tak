@@ -15,4 +15,9 @@
     text-decoration: none;
   }
 
+// カラーを変数にする
 $color-primary: #3498db;
+// svgでfillで使用したいときは変数にクラスを再設定する必要あり
+.color-primary {
+    fill:$color-primary;
+}

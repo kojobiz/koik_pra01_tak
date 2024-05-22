@@ -11,4 +11,8 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.color-primary {
+  fill: #3498db;
 }/*# sourceMappingURL=common.css.map */
