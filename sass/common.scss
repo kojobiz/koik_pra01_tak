@@ -43,3 +43,27 @@ $color-iconorange: #ff9d06;
 .stroke-zero {
     stroke-width: 0;
 }
+
+/////////////////
+/// header
+/// 
+.l-header {
+    width:100%;
+    font-weight: 500;
+}
+// pc用
+.l-header__inner {
+    display:flex;
+    align-items:center;
+}
+.l-header__title {
+    margin-left: 2.6rem;
+    margin-right:2rem;
+    flex:1;
+    font-size: 1rem;
+    line-height: 1;
+}
+.l-header__navi {
+    display:flex;
+    line-height: 1;
+}
